@@ -4,15 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="./output.css" type="text/css" rel="stylesheet">
+    <title>CoffeeStyle - Webflow Ecommerce website template</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/src/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/src/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wrapper">
-            <header class="header">
-                Header
+        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+            <header class="py-6 mx-10">
+                <nav class="flex flex-row justify-between items-center">
+                    <div class="logo basis-2/6 text-center text-xl font-bold cursor-pointer">
+                        CoffeeStyle.
+                    </div>
+
+                    <ul class="basis-3/6 flex flex-grow items-center justify-end gap-8
+                        uppercase text-sm text-gray-500 font-medium">
+                        <li class="py-1 hover:text-gray-800 relative after:absolute
+                            after:bottom-0 after:left-0 after:h-0.5 after:bg-light-coffee
+                            after:w-0 hover:after:w-full after:transition-all
+                            after:ease-in-out after:duration-300 whitespace-nowrap cursor-pointer">
+                            <a href="#!" class="">Home</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="">Our Products</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="">Blog</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="">About</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="">Contact</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="">Styleguide</a>
+                        </li>
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="" target="_blank">Codegamo</a>
+                        </li>
+                    </ul>
+
+                    <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase
+                        text-sm text-gray-500 font-medium">
+                        <li class="ct-top-menu-item">
+                            <a href="#!" class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="ct-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                                <span class="mx-2">Cart</span>
+                                <span class="ct-badge-circle bg-gray-500 text-white">3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
 
             <main>
