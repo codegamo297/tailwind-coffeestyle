@@ -28,7 +28,7 @@
 }
 
 .ct-subheadline {
-    @apply flex justify-center items-center mb-[100px];
+    @apply flex justify-center items-center mb-100px;
 }
 
 .ct-subheadline-deco-line {
@@ -37,4 +37,9 @@
 
 .ct-subheadline-label {
     @apply uppercase mx-4 text-xs tracking-[2px] font-bold text-gray-500 text-center;
+}
+
+.ct-button {
+    @apply px-6 py-4 text-center uppercase font-bold text-xs tracking-[2px]
+    hover:bg-opacity-90 cursor-pointer;
 }
