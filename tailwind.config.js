@@ -3,6 +3,9 @@ module.exports = {
     content: ["./public/**/*.{html,js}"],
     theme: {
         extend: {
+            screens: {
+                xs: "480px",
+            },
             fontFamily: {
                 Karla: ["Karla", "sans-serif"],
             },
@@ -41,6 +44,9 @@ module.exports = {
                 "product-coffee-07": "url('./images/product-coffee-07.jpg')",
                 "product-coffee-08": "url('./images/product-coffee-08.jpg')",
                 "product-coffee-09": "url('./images/product-coffee-09.jpg')",
+                "magazine-image-01": "url('./images/magazine-image-01.jpg')",
+                "magazine-image-02": "url('./images/magazine-image-02.jpg')",
+                "magazine-image-03": "url('./images/magazine-image-03.jpg')",
             },
             margin: {
                 "100px": "100px",
@@ -48,6 +54,12 @@ module.exports = {
             },
             transitionDuration: {
                 400: "400ms",
+            },
+            letterSpacing: {
+                "2px": "2px",
+            },
+            height: {
+                "130px": "130px",
             },
         },
     },
