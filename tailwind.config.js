@@ -52,6 +52,9 @@ module.exports = {
                 "magazine-image-02": "url('./images/magazine-image-02.jpg')",
                 "magazine-image-03": "url('./images/magazine-image-03.jpg')",
                 "bg-parallax-01": "url('./images/bg-parallax-01.jpg')",
+                "lifestyle-story-01": "url('./images/lifestyle-story-01.jpg')",
+                "lifestyle-story-02": "url('./images/lifestyle-story-02.jpg')",
+                "lifestyle-story-03": "url('./images/lifestyle-story-03.jpg')",
             },
             margin: {
                 "100px": "100px",
