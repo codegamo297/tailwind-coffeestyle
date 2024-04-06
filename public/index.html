@@ -31,8 +31,9 @@
 
 <body>
     <div id="root">
-        <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8">
-            <header class="p-6 mx-auto">
+        <div class="content-wrapper ct-no-parallax font-Karla text-base
+            mx-auto px-8"> <!-- Content Wrapper #1 -->
+            <header class="p-6 mx-auto w-full max-w-screen-2xl">
                 <nav class="flex flex-row justify-between items-center relative">
                     <div class="logo basis-2/6 text-center text-xl font-bold cursor-pointer">
                         <a href="./index.html">
@@ -41,8 +42,8 @@
                     </div>
 
                     <ul id="ct-top-menu" class="basis-3/6 hidden lg:flex lg:flex-grow
-                        lg:items-center lg:justify-end lg:gap-8 uppercase text-sm
-                        text-gray-500 font-medium">
+                        lg:items-center lg:justify-end lg:gap-8 uppercase text-xs
+                        text-gray-500 font-bold">
                         <li class="ct-top-menu-item ct-top-menu-item-active">
                             <a href="#!" class="">Home</a>
                         </li>
@@ -93,624 +94,629 @@
                 </nav>
             </header>
 
-            <main>
-                <!-- Slider -->
-                <div class="slider h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom
+            <!-- Slider -->
+            <div class="slider w-full max-w-screen-2xl h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom
                     mb-100px">
-                    <div class="w-full h-full flex justify-center items-center bg-gray-900
+                <div class="w-full h-full flex justify-center items-center bg-gray-900
                         bg-opacity-35">
-                        <div class="mx-16 text-white text-center">
-                            <p class="uppercase text-lg opacity-80">Best place to buy coffee</p>
-                            <h1 class="my-2.5 text-5xl font-medium">Coffee Mugs</h1>
-                            <p class="text-lg opacity-90 ">
-                                The most versatile furniture system ever created. Designed to fit your life, made to
-                                move and grow.
-                            </p>
-                            <a href="#!" class="mt-8 inline-block">
-                                <div class="ct-button w-max bg-white text-black
-                                    hover:bg-opacity-95">
-                                    Explore Our Products
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div> <!-- End slider -->
-
-                <!-- Story -->
-                <div class="ct-subheadline">
-                    <div class="ct-subheadline-deco-line"></div>
-                    <p class="ct-subheadline-label">Our Coffee Story</p>
-                    <div class="ct-subheadline-deco-line"></div>
-                </div>
-                <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-5 w-[95%]
-                    xl:w-[65%] mx-auto mb-100px">
-                    <div class="basis-1/2">
-                        <video autoplay loop muted class="w-full h-full object-cover
-                            min-h-[350px]">
-                            <source src="./video/coffee-video.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="basis-1/2 text-center lg:text-left lg:pl-6">
-                        <h2 class="text-3xl leading-10 mb-4">
-                            Even the all-powerful Pointing has no control about the blind texts.
-                        </h2>
-                        <p class="text-base leading-7 mb-4 text-gray-500">
-                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                            Even the all-powerful Pointing has no control about the blind texts it is an almost
-                            unorthographic life One day however a small line of blind text by the name of Lorem
-                            Ipsum decided to leave for the far World of Grammar.
+                    <div class="mx-16 text-white text-center">
+                        <p class="uppercase text-lg opacity-80">Best place to buy coffee</p>
+                        <h1 class="my-2.5 text-5xl font-medium">Coffee Mugs</h1>
+                        <p class="text-lg opacity-90 ">
+                            The most versatile furniture system ever created. Designed to fit your life, made to
+                            move and grow.
                         </p>
-                        <a href="#!" class="mt-2 inline-block text-coffee-400
+                        <a href="#!" class="mt-8 inline-block">
+                            <div class="ct-button w-max bg-white text-black
+                                    hover:bg-opacity-95">
+                                Explore Our Products
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- End slider -->
+
+            <!-- Story -->
+            <div class="ct-subheadline">
+                <div class="ct-subheadline-deco-line"></div>
+                <p class="ct-subheadline-label">Our Coffee Story</p>
+                <div class="ct-subheadline-deco-line"></div>
+            </div>
+            <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-5 w-[95%]
+                    xl:w-[65%] mx-auto mb-100px">
+                <div class="basis-1/2">
+                    <video autoplay loop muted class="w-full h-full object-cover
+                            min-h-[350px]">
+                        <source src="./video/coffee-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="basis-1/2 text-center lg:text-left lg:pl-6">
+                    <h2 class="text-3xl leading-10 mb-4">
+                        Even the all-powerful Pointing has no control about the blind texts.
+                    </h2>
+                    <p class="text-base leading-7 mb-4 text-gray-500">
+                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                        Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic life One day however a small line of blind text by the name of Lorem
+                        Ipsum decided to leave for the far World of Grammar.
+                    </p>
+                    <a href="#!" class="mt-2 inline-block text-coffee-400
                             hover:text-coffee-600 relative after:absolute
                             after:bottom-0 after:left-0 after:h-0.5
                             after:bg-coffee-50 after:hover:bg-coffee-400
                             after:hover:bg-opacity-70 after:w-full after:transition-all
                             after:ease-in-out after:duration-300">
-                            Read the full Story
-                        </a>
-                    </div>
-                </div> <!-- End story -->
-
-                <!-- Featured Mugs -->
-                <div class="ct-subheadline">
-                    <div class="ct-subheadline-deco-line"></div>
-                    <p class="ct-subheadline-label">Featured Mugs</p>
-                    <div class="ct-subheadline-deco-line"></div>
+                        Read the full Story
+                    </a>
                 </div>
-                <div class="featured-mugs w-[95%] xl:w-[65%] mx-auto mb-100px">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-5">
-                        <article class="ct-product-card">
-                            <div class="h-[400px] sm:h-[540px] bg-featured-mug-01 bg-cover
+            </div> <!-- End story -->
+
+            <!-- Featured Mugs -->
+            <div class="ct-subheadline">
+                <div class="ct-subheadline-deco-line"></div>
+                <p class="ct-subheadline-label">Featured Mugs</p>
+                <div class="ct-subheadline-deco-line"></div>
+            </div>
+            <div class="featured-mugs w-[95%] xl:w-[65%] mx-auto mb-100px">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-5">
+                    <article class="ct-product-card">
+                        <div class="h-[400px] sm:h-[540px] bg-featured-mug-01 bg-cover
                                 bg-no-repeat bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
                                     hover:bg-opacity-10 transition-all ease-in-out
                                     duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
+                                    <div class="ct-button absolute w-11/12 bottom-4
                                         left-1/2 -translate-x-1/2 hidden group-hover:block
                                         group-hover:animate-fadeIn bg-white
                                         text-gray-900">
-                                            Explore mug
-                                        </div>
+                                        Explore mug
                                     </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Pink Premium Ceramic
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 99.00 USD
-                                    </span>
                                 </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Pink Premium Ceramic
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 99.00 USD
+                                </span>
                             </div>
-                        </article>
-                        <article class="ct-product-card">
-                            <div class="h-[400px] sm:h-[540px] bg-featured-mug-02 bg-cover
+                        </div>
+                    </article>
+                    <article class="ct-product-card">
+                        <div class="h-[400px] sm:h-[540px] bg-featured-mug-02 bg-cover
                                 bg-no-repeat bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
                                     hover:bg-opacity-10 transition-all ease-in-out
                                     duration-400 relative group">
-                                        <div class="absolute w-[100px] bg-white py-2 px-4
+                                    <div class="absolute w-[100px] bg-white py-2 px-4
                                             top-3 right-3 text-center font-semibold
                                             text-coffee-400 cursor-auto">
-                                            On Sale.
-                                        </div>
-                                        <div class="ct-button absolute w-11/12 bottom-4
+                                        On Sale.
+                                    </div>
+                                    <div class="ct-button absolute w-11/12 bottom-4
                                             left-1/2 -translate-x-1/2 hidden group-hover:block
                                             group-hover:animate-fadeIn bg-white
                                             text-gray-900">
-                                            Explore mug
-                                        </div>
+                                        Explore mug
                                     </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Golden Designers Mug
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-xl text-coffee-400 mr-[10px]">
-                                        $50.00
-                                    </span>
-                                    <span class="text-bases text-gray-400 line-through">
-                                        $ 69.00 USD
-                                    </span>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-                </div> <!-- End featured-mugs -->
-
-                <!-- More products -->
-                <div class="ct-subheadline">
-                    <div class="ct-subheadline-deco-line"></div>
-                    <p class="ct-subheadline-label">More Products</p>
-                    <div class="ct-subheadline-deco-line"></div>
-                </div>
-                <div class="more-products w-[95%] xl:w-[65%] mx-auto mb-100px">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14
-                        md:gap-5">
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-01 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="absolute w-[100px] bg-white py-2 px-4
-                                            top-3 right-3 text-center font-semibold
-                                            text-coffee-400 cursor-auto">
-                                            On Sale.
-                                        </div>
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Red Love Cup
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-xl text-coffee-400 mr-[10px]">
-                                        $25.00
-                                    </span>
-                                    <span class="text-bases text-gray-400 line-through">
-                                        $ 37.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-02 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="absolute w-[100px] bg-white py-2 px-4
-                                            top-3 right-3 text-center font-semibold
-                                            text-coffee-400 cursor-auto">
-                                            On Sale.
-                                        </div>
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Black Tea Cup
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-xl text-coffee-400 mr-[10px]">
-                                        $15.00
-                                    </span>
-                                    <span class="text-bases text-gray-400 line-through">
-                                        $ 29.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-03 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        B&W Essentials Mug
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 19.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-04 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Winter Style Mug
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 25.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-05 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Ceramic Tea
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 46.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-06 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        No Handle Bar Cup
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 34.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-07 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Espresso Cup by Mugs.co
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 25.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-08 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Pink Premium Ceramic
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 99.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="ct-product-card mb-50px">
-                            <div class="h-[380px] bg-product-coffee-09 bg-cover bg-no-repeat
-                                bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
-                                    hover:bg-opacity-10 transition-all ease-in-out
-                                    duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
-                                        left-1/2 -translate-x-1/2 hidden group-hover:block
-                                        group-hover:animate-fadeIn bg-white
-                                        text-gray-900">
-                                            Explore mug
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#!" class="">
-                                    <h3 class="text-xl mb-3 hover:text-coffee-400">
-                                        Summer Designer Cup
-                                    </h3>
-                                </a>
-                                <div>
-                                    <span class="text-bases text-gray-500">
-                                        $ 29.00 USD
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div> <!-- End more-products -->
-
-                <!-- Coffee Magazine -->
-                <div class="ct-subheadline">
-                    <div class="ct-subheadline-deco-line"></div>
-                    <p class="ct-subheadline-label">
-                        Buy 2 mugs and get a coffee magazine free
-                    </p>
-                    <div class="ct-subheadline-deco-line"></div>
-                </div>
-                <div class="coffee-magazine w-[95%] xl:w-[65%] mx-auto mb-32">
-                    <div class="flex flex-col-reverse lg:flex-row justify-center
-                        items-center gap-16 lg:gap-5">
-                        <div class="ct-magazine-content basis-1/2 ml-0 lg:ml-[60px]
-                            text-center lg:text-left">
-                            <div class="mb-5">
-                                <p class="text-xs uppercase tracking-2px font-bold
-                                    text-gray-500">
-                                    Premium Offer
-                                </p>
-                                <h2 class="mt-[10px] mb-[15px] text-4xl">
-                                    Get our Coffee Magazine
-                                </h2>
-                                <p class="text-gray-500 leading-7 w-full lg:w-[400px]">
-                                    The most versatile furniture system ever created. Designed to fit your life.
-                                </p>
-                            </div>
-                            <a href="#!" class="ct-button inline-block w-max bg-gray-900
-                                text-white">
-                                Start Shopping
                             </a>
                         </div>
-                        <div class="ct-magazine-images basis-1/2 md:flex md:flex-row gap-5
-                            w-full md:w-auto h-full">
-                            <div class="ct-magazine-big-image h-[280px] w-full md:w-[280px]
-                                basis-2/3 mb-3 xs:mb-5 md:mb-0 bg-magazine-image-01 bg-cover bg-no-repeat
-                                bg-center"></div>
-                            <div class="ct-magazine-small-images basis-1/3 flex flex-row
-                                md:flex-col gap-3 xs:gap-5">
-                                <div class="h-130px xs:h-[200px] md:h-130px w-full
-                                    md:w-[160px] bg-cover bg-center bg-magazine-image-02
-                                    bg-no-repeat"></div>
-                                <div class="h-130px xs:h-[200px] md:h-130px w-full
-                                    md:w-[160px] bg-cover bg-center bg-magazine-image-03
-                                    bg-no-repeat"></div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Golden Designers Mug
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-xl text-coffee-400 mr-[10px]">
+                                    $50.00
+                                </span>
+                                <span class="text-bases text-gray-400 line-through">
+                                    $ 69.00 USD
+                                </span>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- End coffee-magazine -->
-
-                <div class="ct-parallax-section bg-bg-parallax-01 bg-cover bg-no-repeat
-                    bg-center h-[340px] mb-24 bg-fixed w-screen relative
-                    left-[calc(-50vw+49%)]"></div>
-
-                <!-- Lifestyle Stories -->
-                <div class="ct-subheadline">
-                    <div class="ct-subheadline-deco-line"></div>
-                    <p class="ct-subheadline-label">Behind the mugs, lifestyle stories</p>
-                    <div class="ct-subheadline-deco-line"></div>
+                    </article>
                 </div>
-                <div class="lifestyle-stories w-[95%] xl:w-[65%] mx-auto mb-24">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14
+            </div> <!-- End featured-mugs -->
+
+            <!-- More products -->
+            <div class="ct-subheadline">
+                <div class="ct-subheadline-deco-line"></div>
+                <p class="ct-subheadline-label">More Products</p>
+                <div class="ct-subheadline-deco-line"></div>
+            </div>
+            <div class="more-products w-[95%] xl:w-[65%] mx-auto mb-100px">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14
                         md:gap-5">
-                        <article class="ct-lifestyle-story mb-50px">
-                            <div class="h-[300px] bg-lifestyle-story-01 bg-cover bg-no-repeat
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-01 bg-cover bg-no-repeat
                                 bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
                                     hover:bg-opacity-10 transition-all ease-in-out
                                     duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
+                                    <div class="absolute w-[100px] bg-white py-2 px-4
+                                            top-3 right-3 text-center font-semibold
+                                            text-coffee-400 cursor-auto">
+                                        On Sale.
+                                    </div>
+                                    <div class="ct-button absolute w-11/12 bottom-4
                                         left-1/2 -translate-x-1/2 hidden group-hover:block
                                         group-hover:animate-fadeIn bg-white
                                         text-gray-900">
-                                            Read the Full Story
-                                        </div>
+                                        Explore mug
                                     </div>
-                                </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Red Love Cup
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-xl text-coffee-400 mr-[10px]">
+                                    $25.00
+                                </span>
+                                <span class="text-bases text-gray-400 line-through">
+                                    $ 37.00 USD
+                                </span>
                             </div>
-                            <div class="text-center lg:text-left mt-6">
-                                <a href="#!" class="">
-                                    <p class="text-xl mb-3 hover:text-coffee-400">
-                                        Health Check: why do I get a headache when I haven&apos;t had my coffee?
-                                    </p>
-                                </a>
-                                <p class="text-gray-500 leading-7 mb-3">
-                                    It is a paradisematic country, in which roasted parts of sentences fly into your
-                                    mouth.
-                                </p>
-                                <p class="text-gray-500 leading-7 uppercase text-xs
-                                    font-bold tracking-2px">
-                                    October 9, 2018
-                                </p>
-                            </div>
-                        </article>
-                        <article class="ct-lifestyle-story mb-50px">
-                            <div class="h-[300px] bg-lifestyle-story-02 bg-cover bg-no-repeat
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-02 bg-cover bg-no-repeat
                                 bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
                                     hover:bg-opacity-10 transition-all ease-in-out
                                     duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
+                                    <div class="absolute w-[100px] bg-white py-2 px-4
+                                            top-3 right-3 text-center font-semibold
+                                            text-coffee-400 cursor-auto">
+                                        On Sale.
+                                    </div>
+                                    <div class="ct-button absolute w-11/12 bottom-4
                                         left-1/2 -translate-x-1/2 hidden group-hover:block
                                         group-hover:animate-fadeIn bg-white
                                         text-gray-900">
-                                            Read the Full Story
-                                        </div>
+                                        Explore mug
                                     </div>
-                                </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Black Tea Cup
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-xl text-coffee-400 mr-[10px]">
+                                    $15.00
+                                </span>
+                                <span class="text-bases text-gray-400 line-through">
+                                    $ 29.00 USD
+                                </span>
                             </div>
-                            <div class="text-center lg:text-left mt-6">
-                                <a href="#!" class="">
-                                    <p class="text-xl mb-3 hover:text-coffee-400">
-                                        How long does a cup of coffee keep you awake?
-                                    </p>
-                                </a>
-                                <p class="text-gray-500 leading-7 mb-3">
-                                    It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
-                                </p>
-                                <p class="text-gray-500 leading-7 uppercase text-xs
-                                    font-bold tracking-2px">
-                                    October 9, 2018
-                                </p>
-                            </div>
-                        </article>
-                        <article class="ct-lifestyle-story mb-50px">
-                            <div class="h-[300px] bg-lifestyle-story-03 bg-cover bg-no-repeat
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-03 bg-cover bg-no-repeat
                                 bg-center">
-                                <a href="#!">
-                                    <div class="w-full h-full hover:bg-gray-900
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
                                     hover:bg-opacity-10 transition-all ease-in-out
                                     duration-400 relative group">
-                                        <div class="ct-button absolute w-11/12 bottom-4
+                                    <div class="ct-button absolute w-11/12 bottom-4
                                         left-1/2 -translate-x-1/2 hidden group-hover:block
                                         group-hover:animate-fadeIn bg-white
                                         text-gray-900">
-                                            Read the Full Story
-                                        </div>
+                                        Explore mug
                                     </div>
-                                </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    B&W Essentials Mug
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 19.00 USD
+                                </span>
                             </div>
-                            <div class="text-center lg:text-left mt-6">
-                                <a href="#!" class="">
-                                    <p class="text-xl mb-3 hover:text-coffee-400">
-                                        Recent research suggests that heavy coffee drinkers may reap health benefits.
-                                    </p>
-                                </a>
-                                <p class="text-gray-500 leading-7 mb-3">
-                                    It is a paradisematic country, in which roasted parts of sentences fly into your
-                                    mouth.
-                                </p>
-                                <p class="text-gray-500 leading-7 uppercase text-xs
-                                    font-bold tracking-2px">
-                                    October 9, 2018
-                                </p>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-04 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Winter Style Mug
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 25.00 USD
+                                </span>
                             </div>
-                        </article>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-05 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Ceramic Tea
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 46.00 USD
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-06 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    No Handle Bar Cup
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 34.00 USD
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-07 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Espresso Cup by Mugs.co
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 25.00 USD
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-08 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Pink Premium Ceramic
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 99.00 USD
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-product-card mb-50px">
+                        <div class="h-[380px] bg-product-coffee-09 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Explore mug
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#!" class="">
+                                <h3 class="text-xl mb-3 hover:text-coffee-400">
+                                    Summer Designer Cup
+                                </h3>
+                            </a>
+                            <div>
+                                <span class="text-bases text-gray-500">
+                                    $ 29.00 USD
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div> <!-- End more-products -->
+
+            <!-- Coffee Magazine -->
+            <div class="ct-subheadline">
+                <div class="ct-subheadline-deco-line"></div>
+                <p class="ct-subheadline-label">
+                    Buy 2 mugs and get a coffee magazine free
+                </p>
+                <div class="ct-subheadline-deco-line"></div>
+            </div>
+            <div class="coffee-magazine w-[95%] xl:w-[65%] mx-auto mb-32">
+                <div class="flex flex-col-reverse lg:flex-row justify-center
+                        items-center gap-16 lg:gap-5">
+                    <div class="ct-magazine-content basis-1/2 ml-0 lg:ml-[60px]
+                            text-center lg:text-left">
+                        <div class="mb-5">
+                            <p class="text-xs uppercase tracking-2px font-bold
+                                    text-gray-500">
+                                Premium Offer
+                            </p>
+                            <h2 class="mt-[10px] mb-[15px] text-4xl">
+                                Get our Coffee Magazine
+                            </h2>
+                            <p class="text-gray-500 leading-7 w-full lg:w-[400px]">
+                                The most versatile furniture system ever created. Designed to fit your life.
+                            </p>
+                        </div>
+                        <a href="#!" class="ct-button inline-block w-max bg-gray-900
+                                text-white">
+                            Start Shopping
+                        </a>
                     </div>
+                    <div class="ct-magazine-images basis-1/2 md:flex md:flex-row gap-5
+                            w-full md:w-auto h-full">
+                        <div class="ct-magazine-big-image h-[280px] w-full md:w-[280px]
+                                basis-2/3 mb-3 xs:mb-5 md:mb-0 bg-magazine-image-01 bg-cover bg-no-repeat
+                                bg-center"></div>
+                        <div class="ct-magazine-small-images basis-1/3 flex flex-row
+                                md:flex-col gap-3 xs:gap-5">
+                            <div class="h-130px xs:h-[200px] md:h-130px w-full
+                                    md:w-[160px] bg-cover bg-center bg-magazine-image-02
+                                    bg-no-repeat"></div>
+                            <div class="h-130px xs:h-[200px] md:h-130px w-full
+                                    md:w-[160px] bg-cover bg-center bg-magazine-image-03
+                                    bg-no-repeat"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End coffee-magazine -->
+        </div> <!-- End content-wrapper #1 -->
 
-                </div> <!-- End lifestyle-stories -->
+        <!-- <div class="ct-parallax bg-bg-parallax-01 bg-cover bg-no-repeat
+                bg-center h-[340px] mb-24 bg-fixed w-screen relative
+                left-[calc(-50vw+49%)]"></div> -->
 
-                <!-- Subscribe us -->
-                <div class="subscribe-us h-[327px] bg-[#1d1f2e] flex flex-col
+        <div class="ct-parallax">
+            <div class="ct-parallax-image bg-bg-parallax-01"></div>
+        </div>
+
+        <div class="content-wrapper ct-no-parallax font-Karla text-base mx-auto px-8">
+            <!-- Content Wrapper #1 -->
+            <!-- Lifestyle Stories -->
+            <div class="ct-subheadline mt-100px">
+                <div class="ct-subheadline-deco-line"></div>
+                <p class="ct-subheadline-label">Behind the mugs, lifestyle stories</p>
+                <div class="ct-subheadline-deco-line"></div>
+            </div>
+            <div class="lifestyle-stories w-[95%] xl:w-[65%] mx-auto mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14
+                        md:gap-5">
+                    <article class="ct-lifestyle-story mb-50px">
+                        <div class="h-[300px] bg-lifestyle-story-01 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Read the Full Story
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center lg:text-left mt-6">
+                            <a href="#!" class="">
+                                <p class="text-xl mb-3 hover:text-coffee-400">
+                                    Health Check: why do I get a headache when I haven&apos;t had my coffee?
+                                </p>
+                            </a>
+                            <p class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your
+                                mouth.
+                            </p>
+                            <p class="text-gray-500 leading-7 uppercase text-xs
+                                    font-bold tracking-2px">
+                                October 9, 2018
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ct-lifestyle-story mb-50px">
+                        <div class="h-[300px] bg-lifestyle-story-02 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Read the Full Story
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center lg:text-left mt-6">
+                            <a href="#!" class="">
+                                <p class="text-xl mb-3 hover:text-coffee-400">
+                                    How long does a cup of coffee keep you awake?
+                                </p>
+                            </a>
+                            <p class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+                            </p>
+                            <p class="text-gray-500 leading-7 uppercase text-xs
+                                    font-bold tracking-2px">
+                                October 9, 2018
+                            </p>
+                        </div>
+                    </article>
+                    <article class="ct-lifestyle-story mb-50px">
+                        <div class="h-[300px] bg-lifestyle-story-03 bg-cover bg-no-repeat
+                                bg-center">
+                            <a href="#!">
+                                <div class="w-full h-full hover:bg-gray-900
+                                    hover:bg-opacity-10 transition-all ease-in-out
+                                    duration-400 relative group">
+                                    <div class="ct-button absolute w-11/12 bottom-4
+                                        left-1/2 -translate-x-1/2 hidden group-hover:block
+                                        group-hover:animate-fadeIn bg-white
+                                        text-gray-900">
+                                        Read the Full Story
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center lg:text-left mt-6">
+                            <a href="#!" class="">
+                                <p class="text-xl mb-3 hover:text-coffee-400">
+                                    Recent research suggests that heavy coffee drinkers may reap health benefits.
+                                </p>
+                            </a>
+                            <p class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your
+                                mouth.
+                            </p>
+                            <p class="text-gray-500 leading-7 uppercase text-xs
+                                    font-bold tracking-2px">
+                                October 9, 2018
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </div> <!-- End lifestyle-stories -->
+
+            <!-- Subscribe us -->
+            <div class="subscribe-us w-full max-w-screen-2xl h-[327px] bg-[#1d1f2e] flex flex-col
                     justify-center items-center">
-                    <div class="flex justify-center items-center px-6 xs:px-0 mb-4">
-                        <div class="w-8 h-px bg-gray-600"></div>
-                        <p class="uppercase mx-4 text-xs tracking-2px font-bold
+                <div class="flex justify-center items-center px-6 xs:px-0 mb-4">
+                    <div class="w-8 h-px bg-gray-600"></div>
+                    <p class="uppercase mx-4 text-xs tracking-2px font-bold
                             text-gray-500 text-center">
-                            Sign up and get free coffee bags
-                        </p>
-                        <div class="w-8 h-px bg-gray-600"></div>
-                    </div>
-                    <h2 class="text-4xl text-white mb-6">Coffee Updates</h2>
-                    <div class="ct-form">
-                        <div class="flex flex-col md:flex-row justify-center items-center
+                        Sign up and get free coffee bags
+                    </p>
+                    <div class="w-8 h-px bg-gray-600"></div>
+                </div>
+                <h2 class="text-4xl text-white mb-6">Coffee Updates</h2>
+                <div class="ct-form">
+                    <div class="flex flex-col md:flex-row justify-center items-center
                             gap-3">
-                            <div class="ct-form-item text-center">
-                                <input placeholder="customer@coffeestyle.io" class="px-6 py-4
+                        <div class="ct-form-item text-center">
+                            <input placeholder="customer@coffeestyle.io" class="px-6 py-4
                                     w-[350px] max-w-[80%] xs:max-w-full bg-inherit
                                     border-[1px] outline-none
                                     border-gray-700 text-white leading-5
                                     hover:border-gray-300 focus:border-gray-300
                                     duration-500 uppercase text-xs font-bold
                                     tracking-2px" type="email">
-                            </div>
-                            <div class="ct-form-item">
-                                <button type="submit" class="ct-button bg-white
+                        </div>
+                        <div class="ct-form-item">
+                            <button type="submit" class="ct-button bg-white
                                     text-gray-900 w-max !leading-5">
-                                    Subscribe
-                                </button>
-                            </div>
+                                Subscribe
+                            </button>
                         </div>
                     </div>
-                </div> <!-- End subscribe-us -->
-            </main>
+                </div>
+            </div> <!-- End subscribe-us -->
 
             <footer class="w-[95%] xl:w-[65%] mx-auto my-100px">
                 <div class="flex flex-col text-center lg:text-left lg:grid
@@ -766,7 +772,7 @@
                     </a>
                 </div>
             </footer>
-        </div> <!-- End content-wrapper -->
+        </div> <!-- End content-wrapper #2 -->
     </div> <!-- End root -->
 </body>
 

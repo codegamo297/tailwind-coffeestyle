@@ -12,7 +12,7 @@
     @apply py-1 hover:text-gray-800 relative after:lg:absolute
     after:lg:bottom-0 after:lg:left-0 after:lg:h-0.5 after:lg:bg-coffee-200
     after:lg:w-0 hover:after:lg:w-full after:lg:transition-all
-    after:lg:ease-in-out after:lg:duration-300 whitespace-nowrap cursor-pointer;
+    after:lg:ease-in-out after:lg:duration-300 whitespace-nowrap cursor-pointer tracking-2px;
 }
 
 .ct-top-menu-item-active {
@@ -42,4 +42,53 @@
 .ct-button {
     @apply px-6 py-4 text-center uppercase font-bold text-xs tracking-2px
     hover:bg-opacity-90 cursor-pointer;
+}
+
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.ct-parallax,
+.ct-no-parallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct-parallax {
+    height: 40vh;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: -1;
+}
+
+.ct-no-parallax {
+    height: auto;
+    z-index: 999;
+    background: white;
+}
+
+.ct-parallax-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen(lg) {
+    .ct-parallax {
+        height: 70vh;
+        transform-style: preserve-3d;
+    }
+
+    .ct-parallax-image {
+        transform: translateZ(-1px) scale(1.5);
+    }
 }
